@@ -16,6 +16,11 @@
                 color: #333;
             }
         </style>
+        <script>
+            ((window, undefined) => {
+                window.patternfly = { c3ChartDefaults: function(){return {}} };
+            })(this);
+        </script>
     </head>
     <body>
 
@@ -52,11 +57,7 @@
 
         </section>
 
-        <script>
-            ((window, undefined) => {
-                window.patternfly = { c3ChartDefaults: function(){return {}} };
-            })(this);
-        </script>
+
 
         <script src="/node_modules/angular/angular.min.js"></script>
         <script src="/node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
