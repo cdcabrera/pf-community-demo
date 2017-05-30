@@ -30,6 +30,10 @@
         "bower": "^1.8.0",
         "gulp": "^3.9.1",
         "gulp-less": "^3.3.0",
+        "grunt": "^1.0.1",
+        "grunt-contrib-less": "^1.4.1",
+        "grunt-browser-sync": "^2.2.0",
+        "webpack": "",
         "browser-sync": "^2.18.12"
     }
 }

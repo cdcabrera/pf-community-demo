@@ -1,0 +1,27 @@
+{
+  "name": "pf-community-demo",
+  "version": "0.0.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "main": [],
+  "dependencies": {
+    "patternfly": "3.25.0",
+    "angular-patternfly": "https://github.com/cdcabrera/angular-patternfly.git#BUILD-package-4x-dist",
+    "angular": "^1.5.11",
+    "angular-ui-bootstrap": "0.14.x"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "patternfly": "3.25.0",
+    "bootstrap-select": "~1.12.2",
+    "font-awesome": "~4.7.0",
+    "moment": "~2.18.1"
+  }
+}
