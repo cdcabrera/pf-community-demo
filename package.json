@@ -3,11 +3,7 @@
     "description": "Patternfly demonstrations.",
     "version": "0.0.0",
     "scripts": {
-        "applauncher": "gulp applauncher",
-        "gulp-start": "gulp start",
-        "grunt-start": "grunt start",
-        "webpack-start": "",
-        "postinstall": "bower install"
+        "start": "gulp applauncher"
     },
     "repository": {
         "type": "git",
