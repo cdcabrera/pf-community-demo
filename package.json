@@ -1,0 +1,35 @@
+{
+    "name": "pf-community-demo",
+    "description": "Patternfly demonstrations.",
+    "version": "0.0.0",
+    "scripts": {
+        "applauncher": "gulp applauncher",
+        "gulp-start": "gulp start",
+        "grunt-start": "grunt start",
+        "webpack-start": "",
+        "postinstall": "bower install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cdcabrera/pf-community-demo.git"
+    },
+    "keywords": [
+        "GitHub"
+    ],
+    "authors": [
+        "CD Cabrera <cabrera.code@gmail.com>"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "patternfly": "3.25.0",
+        "angular-patternfly": "git+https://github.com/cdcabrera/angular-patternfly.git#BUILD-package-4x-dist",
+        "angular": "^1.5.11",
+        "angular-ui-bootstrap": "0.14.x"
+    },
+    "devDependencies": {
+        "bower": "^1.8.0",
+        "gulp": "^3.9.1",
+        "gulp-less": "^3.3.0",
+        "browser-sync": "^2.18.12"
+    }
+}

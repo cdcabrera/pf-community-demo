@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly.css">
+        <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly-additions.css">
+        <style>
+            .demo-label {
+                display:inline-block;
+                font-size: 1.5em;
+                padding-right:20px;
+            }
+            pf-application-launcher {
+                display:inline-block;
+            }
+            pf-application-launcher a {
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+
+        <section class="container" ng-app="sampleApp">
+
+            <div ng-controller="sampleController">
+
+                <h1>Quick Application Launcher Example</h1>
+
+                <ul>
+                    <li>
+                        <span class="demo-label">Grid with Icons</span>
+
+                        <pf-application-launcher
+                            items="navigationItems"
+                            label="'Application Launcher'"
+                            is-disabled="false"
+                            is-list="false"
+                            hidden-icons="false"></pf-application-launcher>
+                    </li>
+
+                    <li>
+                        <span class="demo-label">List with Icons</span>
+
+                        <pf-application-launcher
+                            items="navigationItems"
+                            label="'Application Launcher'"
+                            is-disabled="false"
+                            is-list="true"
+                            hidden-icons="false"></pf-application-launcher>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <script>
+            ((window, undefined) => {
+                window.patternfly = { c3ChartDefaults: function(){return {}} };
+            })(this);
+        </script>
+
+        <script src="/node_modules/angular/angular.min.js"></script>
+        <script src="/node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="/node_modules/angular-patternfly/dist/angular-patternfly.js"></script>
+
+        <script>
+            ((window, undefined) => {
+
+                angular
+                    .module('sampleApp', [
+                        'patternfly.navigation'
+                    ])
+                    .controller('sampleController', [
+                        '$scope',
+                        function ($scope) {
+
+                            $scope.navigationItems = [
+                                {
+                                    title: "Recteque",
+                                    href: "#/ipsum/intellegam/recteque",
+                                    tooltip: "Launch the Function User Interface",
+                                    iconClass: "pficon-storage-domain"
+                                },
+                                {
+                                    title: "Suavitate",
+                                    href: "#/ipsum/intellegam/suavitate",
+                                    tooltip: "Launch the Function User Interface",
+                                    iconClass: "pficon-build"
+                                },
+                                {
+                                    title: "Lorem",
+                                    href: "#/ipsum/intellegam/lorem",
+                                    tooltip: "Launch the Function User Interface",
+                                    iconClass: "pficon-domain"
+                                },
+                                {
+                                    title: "Home",
+                                    href: "#/ipsum/intellegam/home",
+                                    tooltip: "Launch the Function User Interface",
+                                    iconClass: "pficon-home"
+                                }
+                            ];
+
+                            $scope.label = 'Application Launcher';
+                            $scope.isDisabled = false;
+                            $scope.isList = false;
+                            $scope.hiddenIcons = false;
+                        }]);
+
+            })(this);
+        </script>
+
+    </body>
+</html>
