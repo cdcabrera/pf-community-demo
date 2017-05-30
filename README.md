@@ -59,7 +59,12 @@ Breakdown:
 
 Angular PatternFly 4.x
 ```html
-   <pf-application-launcher items="navigationItems" label="{{label}}" is-disabled="isDisabled" is-list="isList" hidden-icons="hiddenIcons"></pf-application-launcher>
+   <pf-application-launcher 
+     items="navigationItems" 
+     label="{{label}}" 
+     is-disabled="isDisabled" 
+     is-list="isList" 
+     hidden-icons="hiddenIcons"></pf-application-launcher>
 ```
 
 ```javascript
